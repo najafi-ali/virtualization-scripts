@@ -96,15 +96,18 @@ These functions support the main configuration tasks by providing utilities for 
 
 📋 Example Usage
 
-Apply global settings to all hosts in a specific cluster
+Apply global settings to all hosts in a specific cluster:
+   ```powershell
 Set-ESXi-StandardConfiguration -vcenter "vcenter.example.com" `
                                -clustername "ProdCluster" `
                                -globalconfig "C:\config\global.json"
-
-Apply settings to a specific ESXi host
+   ```
+Apply settings to a specific ESXi host:
+   ```powershell
 Set-ESXi-StandardConfiguration -vcenter "vcenter.example.com" `
                                -hostname "ESXiHost01" `
                                -globalconfig "C:\config\global.json"
+   ```
 
 📎 Notes
 Script assumes PowerCLI session authentication; use Connect-VIServer if not already connected.
