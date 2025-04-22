@@ -36,7 +36,7 @@ git clone https://github.com/najafi-ali/virtualization-scripts.git
 
 ---
 
-🛠️ Functions Overview
+## 🛠️ Functions Overview
 
 🔹 Main Function
 
@@ -93,8 +93,9 @@ These functions support the main configuration tasks by providing utilities for 
 - **`Restart-ESXi-Host`**: Restarts the ESXi host after applying critical settings.
 - **`Get-ESXi-HostinMaintenanceMode`**: Checks and manages the maintenance mode status of an ESXi host.
 
+---
 
-📋 Example Usage
+## 📋 Example Usage
 
 Apply global settings to all hosts in a specific cluster:
    ```powershell
@@ -108,8 +109,9 @@ Set-ESXi-StandardConfiguration -vcenter "vcenter.example.com" `
                                -hostname "ESXiHost01" `
                                -globalconfig "C:\config\global.json"
    ```
+---
 
-📎 Notes
+## 📎Notes
 Script assumes PowerCLI session authentication; use Connect-VIServer if not already connected.
 JSON configuration file must be structured according to expected keys (example file included).
 
