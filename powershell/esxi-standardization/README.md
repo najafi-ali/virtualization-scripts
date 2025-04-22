@@ -30,7 +30,7 @@ It uses a **JSON configuration file** to apply both **global** and **regional** 
    Install-Module -Name VMware.PowerCLI -Scope CurrentUser
 
 2. Clone this repository:
-git clone https://github.com/najafi-ali/virtualization-scripts/powershell/
+git clone https://github.com/najafi-ali/virtualization-scripts.git
 
 3. Prepare your JSON configuration file with global and regional settings.
 
