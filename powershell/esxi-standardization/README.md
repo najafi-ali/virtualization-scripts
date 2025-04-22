@@ -34,6 +34,7 @@ git clone https://github.com/najafi-ali/virtualization-scripts.git
 
 3. Prepare your JSON configuration file with global and regional settings.
 
+---
 
 🛠️ Functions Overview
 
@@ -92,14 +93,15 @@ These functions support the main configuration tasks by providing utilities for 
 - **`Restart-ESXi-Host`**: Restarts the ESXi host after applying critical settings.
 - **`Get-ESXi-HostinMaintenanceMode`**: Checks and manages the maintenance mode status of an ESXi host.
 
+
 📋 Example Usage
 
-# Apply global settings to all hosts in a specific cluster
+Apply global settings to all hosts in a specific cluster
 Set-ESXi-StandardConfiguration -vcenter "vcenter.example.com" `
                                -clustername "ProdCluster" `
                                -globalconfig "C:\config\global.json"
 
-# Apply settings to a specific ESXi host
+Apply settings to a specific ESXi host
 Set-ESXi-StandardConfiguration -vcenter "vcenter.example.com" `
                                -hostname "ESXiHost01" `
                                -globalconfig "C:\config\global.json"
